@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.actionbar"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="18" />
+
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@android:style/Holo.Light.ButtonBar" >
+        <activity
+            android:name="com.example.actionbar.SplashActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.actionbar.SecondActivity"
+            android:label="@string/title_activity_second" >
+        </activity>
+        <activity android:name="com.example.actionbar.ListActivity" >
+        </activity>
+        <activity
+            android:name="com.example.actionbar.TabActivity"
+            android:label="@string/title_activity_tab" >
+        </activity>
+        <activity
+            android:name="com.example.actionbar.CustomThemeActivity"
+            android:label="@string/title_activity_custom_theme"
+            android:theme="@style/customActionBar" >
+        </activity>
+        <activity
+            android:name="com.example.actionbar.ViewPagerActivity"
+            android:label="@string/title_activity_view_pager" >
+        </activity>
+        <activity
+            android:name="com.example.actionbar.ViewGuideActivity"
+            android:label="@string/title_activity_view_guide" >
+        </activity>
+        <activity
+            android:name="com.example.actionbar.GuideActivity"
+            android:label="@string/title_activity_guide" >
+        </activity>
+        <activity
+            android:name="com.example.actionbar.MainActivity"
+            android:label="@string/app_name"
+            android:logo="@drawable/qq_popover" >
+        </activity>
+        <activity
+            android:name="com.example.actionbar.DeskTopActivity"
+            android:label="@string/title_activity_desk_top" >
+        </activity>
+        <activity
+            android:name="com.example.actionbar.FragmentMenuActivity"
+            android:label="@string/title_activity_slide_menu" >
+        </activity>
+    </application>
+
+</manifest>
